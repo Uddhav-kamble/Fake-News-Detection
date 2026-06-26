@@ -8,7 +8,7 @@ import {
   RiClipboardLine, RiLightbulbLine, RiHistoryLine
 } from 'react-icons/ri'
 
-const API_URL = 'https://fake-news-detection-coral.vercel.app/' || 'http://localhost:5000'
+const API_URL = (import.meta.env.VITE_API_URL || 'https://fake-news-detection-coral.vercel.app').replace(/\/$/, '')
 
 const exampleNews = [
   {
